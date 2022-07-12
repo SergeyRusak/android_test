@@ -11,7 +11,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/appbar_scrolling_view_behavior">
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -22,6 +25,7 @@
                 android:id="@+id/app_preview"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:srcCompat="@tools:sample/backgrounds/scenic" />
@@ -47,8 +51,171 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:text="TextView"
+                android:textColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/app_logo"
                 app:layout_constraintTop_toBottomOf="@+id/app_preview" />
+
+            <RatingBar
+                android:id="@+id/app_rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="5"
+                android:numStars="5"
+                android:progressTint="#FFEB3B"
+                android:rating="4.9"
+                app:layout_constraintStart_toStartOf="@+id/app_name"
+                app:layout_constraintTop_toBottomOf="@+id/app_name" />
+
+            <TextView
+                android:id="@+id/review_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count of reviews"
+                android:textColor="#7AFFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/app_rating"
+                app:layout_constraintStart_toEndOf="@+id/app_rating" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/app_logo"
+                tools:layout_editor_absoluteX="16dp">
+
+                <LinearLayout
+                    android:id="@+id/tag_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:divider="@android:drawable/divider_horizontal_textfield"
+                    android:showDividers="middle|beginning|end">
+
+                    <TextView
+                        android:id="@+id/tag_example5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#14314d"
+                        android:lineSpacingExtra="8sp"
+                        android:text="tag"
+                        android:textAlignment="center"
+                        android:textColor="#337db6" />
+
+                    <TextView
+                        android:id="@+id/tag_example4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#14314d"
+                        android:lineSpacingExtra="8sp"
+                        android:text="tag"
+                        android:textAlignment="center"
+                        android:textColor="#337db6" />
+
+                    <TextView
+                        android:id="@+id/tag_example3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#14314d"
+                        android:lineSpacingExtra="8sp"
+                        android:text="tag"
+                        android:textAlignment="center"
+                        android:textColor="#337db6" />
+
+                    <TextView
+                        android:id="@+id/tag_example2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#14314d"
+                        android:lineSpacingExtra="8sp"
+                        android:text="tag"
+                        android:textAlignment="center"
+                        android:textColor="#337db6" />
+
+                    <TextView
+                        android:id="@+id/tag_example"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#14314d"
+                        android:lineSpacingExtra="8sp"
+                        android:text="tag"
+                        android:textAlignment="center"
+                        android:textColor="#337db6" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/app_description"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Description of App"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Review & Ratings"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_description" />
+
+            <TextView
+                android:id="@+id/app_rating_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="4.9"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <RatingBar
+                android:id="@+id/app_rating4"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:max="5"
+                android:numStars="5"
+                android:progressTint="#FFEB3B"
+                android:rating="4.9"
+                app:layout_constraintStart_toEndOf="@+id/app_rating_text"
+                app:layout_constraintTop_toTopOf="@+id/app_rating_text" />
+
+            <TextView
+                android:id="@+id/review_count4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Count of reviews"
+                android:textColor="#7AFFFFFF"
+                app:layout_constraintStart_toStartOf="@+id/app_rating4"
+                app:layout_constraintTop_toBottomOf="@+id/app_rating4" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/app_rating_text">
+
+                <LinearLayout
+                    android:id="@+id/review_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
