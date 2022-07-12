@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#050b18"
     tools:context=".MainActivity">
 
     <!-- Место для верстки -->
@@ -11,6 +12,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#050b18"
         android:contentDescription="@string/appbar_scrolling_view_behavior"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,7 +21,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#2B2626">
+            android:background="#050b18">
 
             <ImageView
                 android:id="@+id/app_preview"
@@ -35,13 +37,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="-5dp"
+                android:layout_marginTop="-16dp"
                 android:background="#302C2C"
                 android:scaleType="center"
                 android:scaleX="0.8"
                 android:scaleY="0.8"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/app_preview"
+                tools:ignore="ImageContrastCheck"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
@@ -100,7 +103,8 @@
                         android:lineSpacingExtra="8sp"
                         android:text="tag"
                         android:textAlignment="center"
-                        android:textColor="#337db6" />
+                        android:textColor="#337db6"
+                        tools:ignore="TextContrastCheck" />
 
                     <TextView
                         android:id="@+id/tag_example4"
@@ -110,7 +114,8 @@
                         android:lineSpacingExtra="8sp"
                         android:text="tag"
                         android:textAlignment="center"
-                        android:textColor="#337db6" />
+                        android:textColor="#337db6"
+                        tools:ignore="TextContrastCheck" />
 
                     <TextView
                         android:id="@+id/tag_example3"
@@ -120,7 +125,8 @@
                         android:lineSpacingExtra="8sp"
                         android:text="tag"
                         android:textAlignment="center"
-                        android:textColor="#337db6" />
+                        android:textColor="#337db6"
+                        tools:ignore="TextContrastCheck" />
 
                     <TextView
                         android:id="@+id/tag_example2"
@@ -130,7 +136,8 @@
                         android:lineSpacingExtra="8sp"
                         android:text="tag"
                         android:textAlignment="center"
-                        android:textColor="#337db6" />
+                        android:textColor="#337db6"
+                        tools:ignore="TextContrastCheck" />
 
                     <TextView
                         android:id="@+id/tag_example"
@@ -140,7 +147,8 @@
                         android:lineSpacingExtra="8sp"
                         android:text="tag"
                         android:textAlignment="center"
-                        android:textColor="#337db6" />
+                        android:textColor="#337db6"
+                        tools:ignore="TextContrastCheck" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -161,7 +169,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Review & Ratings"
+                android:text="Review and Ratings"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -205,6 +213,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/app_rating_text">
 
                 <LinearLayout
@@ -212,6 +221,65 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+                    <!-- Only for demonstration -->
+
+                    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#050B18">
+
+                        <ImageView
+                            android:id="@+id/avatar"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:text="name of reviewer"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toEndOf="@+id/avatar"
+                            app:layout_constraintTop_toTopOf="@+id/avatar" />
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="date of review"
+                            android:textColor="#92FFFFFF"
+                            app:layout_constraintStart_toStartOf="@+id/name"
+                            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/Comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="This is a review for the app"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/avatar"
+                            app:layout_constraintTop_toBottomOf="@+id/avatar" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Only for demonstration -->
+
+
 
                 </LinearLayout>
             </ScrollView>
