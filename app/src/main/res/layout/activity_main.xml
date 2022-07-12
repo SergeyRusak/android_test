@@ -8,4 +8,47 @@
 
     <!-- Место для верстки -->
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/appbar_scrolling_view_behavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2B2626">
+
+            <ImageView
+                android:id="@+id/app_preview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-5dp"
+                android:background="#302C2C"
+                android:scaleType="center"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/app_preview"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/app_logo"
+                app:layout_constraintTop_toBottomOf="@+id/app_preview" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
