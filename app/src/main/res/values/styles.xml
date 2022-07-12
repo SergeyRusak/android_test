@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tagText">
+        <item name="android:textColor">#337db6</item>
+        <item name="android:background">@drawable/textview_style</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+
+</resources>

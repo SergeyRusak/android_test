@@ -100,158 +100,6 @@
                     android:showDividers="middle|beginning|end">
 
                     <TextView
-                        android:id="@+id/tag_example5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
-                        android:id="@+id/tag_example2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#14314d"
-                        android:lineSpacingExtra="8sp"
-                        android:text="tag"
-                        android:textAlignment="center"
-                        android:textColor="#337db6"
-                        tools:ignore="TextContrastCheck" />
-
-                    <TextView
                         android:id="@+id/tag_example"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -375,7 +223,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/name" />
 
                         <TextView
-                            android:id="@+id/Comment"
+                            android:id="@+id/comment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -428,7 +276,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/name" />
 
                         <TextView
-                            android:id="@+id/Comment"
+                            android:id="@+id/comment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -484,7 +332,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/name" />
 
                         <TextView
-                            android:id="@+id/Comment"
+                            android:id="@+id/comment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -539,7 +387,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/name" />
 
                         <TextView
-                            android:id="@+id/Comment"
+                            android:id="@+id/comment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -594,7 +442,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/name" />
 
                         <TextView
-                            android:id="@+id/Comment"
+                            android:id="@+id/comment"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
